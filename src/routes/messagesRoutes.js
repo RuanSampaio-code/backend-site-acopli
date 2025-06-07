@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.get("/messages", MessagesController.listMessages);
 router.post("/messages", MessagesController.sendMessage);
+router.delete("/messages/:id", MessagesController.deleteMessage);
 
 // Exporta o router para ser usado no app principal
 export default router;
